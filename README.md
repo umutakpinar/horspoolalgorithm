@@ -123,7 +123,7 @@ TRUSTHARD<span style="color: greenyellow">TOOTH</span>HBRUSHES
          <span style="color: greenyellow">TOOTH</span>
 </pre>
 
-14) Bundan sonrasında ise uzunluk kadar kaydırırlır ve aynı işlem tekrarlanır. Peki ne zamana kadar? Şimdiye kadar yapılan karşılaştırma sayısı Text'in eleman sayısından 5 küçük olduğu sürece devam edilir.
+14) Bundan sonrasında ise uzunluk kadar kaydırırlır ve aynı işlem tekrarlanır. Peki ne zamana kadar? Şimdiye kadar yapılan karşılaştırma sayısı Text'in eleman sayısından <= 5 küçük olduğu sürece devam edilir.
 <pre>
 TRUSTHARDTOOTHBRUS<span style="color: red">H</span>ES
               TOOT<span style="color: red">H</span>
