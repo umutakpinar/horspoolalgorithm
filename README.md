@@ -4,7 +4,16 @@ Horspool algoritması, bir metin içinde belirli bir desenin varlığını tespi
 
 Algortima arama metnini soldan sağa, aranacak patterini sağdan sola tarar.
 Yani metni ve patterni alt alta koyduktan sonra, patterin son harfinin denk geldiği eleman ile uyuşup uyuşmadığını kontrol ederek çalışır.
+<pre>
+- En kötü durum: Horspool algoritmasının en kötü durum zaman karmaşıklığı, desenin metnin son karakterinde bulunması durumunda O(mn) dir.
+Burada n, metnin uzunluğu ve m, desenin uzunluğudur.
+- En iyi durum: Horspool algoritmasının en iyi durum zaman karmaşıklığı, eşleşen bir karakter bulunduğunda deseni bir karakter atlayarak ilerleyebildiği durumdur. 
+Bu durumda zaman karmaşıklığı O(n) dir.
+- Ortalama durum: Horspool algoritması ortalama durumda O(m + n) zaman karmaşıklığına sahiptir.
 
+Horspool algoritması, genellikle diğer string arama algoritmalarına göre daha hızlı çalışır ve boyutu büyük metinlerde daha iyi performans gösterir.
+Ancak, en kötü durumda zaman karmaşıklığı yüksek olabilir ve bu nedenle bazı durumlarda diğer algoritmalar daha iyi performans gösterebilir.
+</pre>
 Burada bilmemiz gereken bir diğer önemli nokta ise bu algoritmanın sahip olduğu bad-match atlama tablosudur. Bu tablo arama esnasında atlamalar yaparak aramanın çok daha hızlı olmasını ve gereksiz kontrollerden kaçınılmasını sağlar.
 
 ## Bad-match table oluşturmak
