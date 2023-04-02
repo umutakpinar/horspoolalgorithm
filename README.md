@@ -100,35 +100,35 @@ TRUSTHARDTOO<span style="color: red">T</span>HBRUSHES
 </pre>
 8) T == T midir? evet. O halde bir soldakini kontrol edelim. (kontrol < length olduğu ve true olduğu sürece devam eder)
 <pre>
-TRUSTHARDTOOT<span style="color: red">H</span>HBRUSHES
+TRUSTHARDTOOT<span style="color: red">H</span>BRUSHES
          TOOT<span style="color: red">H</span>
 </pre>
 9) Harfler denk midir? evet. O halde bir soldakini kontrol edelim.
 <pre>
-TRUSTHARDTOO<span style="color: red">T</span><span style="color: greenyellow">H</span>HBRUSHES
+TRUSTHARDTOO<span style="color: red">T</span><span style="color: greenyellow">H</span>BRUSHES
          TOO<span style="color: red">T</span><span style="color: greenyellow">H</span>
 </pre>
 
 10) Harfler denk midir? evet. O halde bir soldakini kontrol edelim. 
 <pre>
-TRUSTHARDTO<span style="color: red">O</span><span style="color: greenyellow">TH</span>HBRUSHES
+TRUSTHARDTO<span style="color: red">O</span><span style="color: greenyellow">TH</span>BRUSHES
          TO<span style="color: red">O</span><span style="color: greenyellow">TH</span>
 </pre>
 11) Harfler denk midir? evet. O halde bir soldakini kontrol edelim.
 <pre>
-TRUSTHARDT<span style="color: red">O</span><span style="color: greenyellow">OTH</span>HBRUSHES
+TRUSTHARDT<span style="color: red">O</span><span style="color: greenyellow">OTH</span>BRUSHES
          T<span style="color: red">O</span><span style="color: greenyellow">OTH</span>
 </pre>
 
 12) Harfler denk midir? evet. O halde bir soldakini kontrol edelim.
 <pre>
-TRUSTHARD<span style="color: red">T</span><span style="color: greenyellow">OOTH</span>HBRUSHES
+TRUSTHARD<span style="color: red">T</span><span style="color: greenyellow">OOTH</span>BRUSHES
          <span style="color: red">T</span><span style="color: greenyellow">OOTH</span>
 </pre>
 
 13) Bir tur daha kontrol edilmesi Kontrol < length'i sağlamaz demek ki eşleşme tamamlandı!
 <pre>
-TRUSTHARD<span style="color: greenyellow">TOOTH</span>HBRUSHES
+TRUSTHARD<span style="color: greenyellow">TOOTH</span>BRUSHES
          <span style="color: greenyellow">TOOTH</span>
 </pre>
 
