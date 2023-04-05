@@ -1,3 +1,6 @@
+## Yalnizca kodu çalıştırmanız yeterli. Konsolda cikti olarak, text ticerisinde gecen tum kelimeleri gosterecek.
+## Recep Umut Akpinar - 1190505805
+
 def black_match_table(
         searchPattern="TOOTH"):  # aranacak kelime bu şekilde parametre olarak verilmeli değer verilmezse TOOOTH
     pattern = list(searchPattern)
@@ -26,7 +29,8 @@ def search(searchText="TRUSTHARDTOOTHBRUSHES", searchPattern="TOOTH"):
     while shift <= (textSize - patternSize):  # aranmayan kısım kadar arama işlemi devam edebilir.
         j = patternSize - 1  # readme dosyasındaki mantıkla pattern'ın son karakterininin index numarasını seçtik çünkü bu algoritma sondan başlayarak eşleşmeleri arıyor demiştik
         count = 0  # şimdiye kadar denenen eşleşme sayısı
-        while j >= 0 and pattern[j] == text[shift + j]:  # texti ve pattern'i alt alta koyduğumuzda sağdan sola doğru eşleşme olduğu sürece ve j patternin boyundan kısa olmadığı sürece sola doğru kontrol etmeye devam et
+        while j >= 0 and pattern[j] == text[
+            shift + j]:  # texti ve pattern'i alt alta koyduğumuzda sağdan sola doğru eşleşme olduğu sürece ve j patternin boyundan kısa olmadığı sürece sola doğru kontrol etmeye devam et
             count = count + 1
             j = j - 1
         if j < 0:  # Eğer sıfırdan küçükse demek ki tam bir eşleşme oldu bu durumda aramaya devam etmek için patternSize kadar ilerlemeli
@@ -35,7 +39,17 @@ def search(searchText="TRUSTHARDTOOTHBRUSHES", searchPattern="TOOTH"):
         else:  # demek ki j sıfırdan küçük değil bu durumda tam bir eşleşme sağlanamadı o halde şu anki karşılaştırılan harfin ASCII numarası ne ise skip dizisinde onu bulup değeri kadar sağa kaydırmalı yani
             shift = shift + skip[ord(text[shift + j + count])]
 
-    print(found)
+    return found
 
 
-search()
+def find_words_in_alice():
+    searchList = ["upon", "sigh", "Dormouse", "jury-box", "swim"]
+    aliceText = open("alice_in_wonderland.txt", "r").read()
+
+    for i in range(0,len(searchList)):
+        print("-------\nWord: {}\n".format(searchList[i]))
+        founded = search(searchText=aliceText, searchPattern=searchList[i])
+        print("Founded: {} times\n-------\n".format(str(founded)))
+
+
+find_words_in_alice()
